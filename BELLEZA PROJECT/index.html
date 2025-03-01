@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belleza.ng - Gift Curation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Belleza.ng</h1>
+        <p>Curating Love, One Gift at a Time</p>
+        
+        <nav>
+            <ul class="nav-links">
+           <li> <a href="index.html">Home</a></li>
+            <li><a href="collections.html">Gift Collections</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776;
+        </div>
+
+        <div class="social-icons">
+            <a href="https://www.instagram.com/belleza_ng?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://wa.me/2349012345678" target="_blank" class="whatsapp" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="tel:+2349012345678" class="call-us" title="Call Us"> <i class="fas fa-phone-alt"></i></a>
+            <a href="https://www.twitter.com/yourprofile" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    
+    </header>
+
+    <section class="Gift-Curation-Banner">
+    <img src="BELLEZA 2.jpg" alt="Gift Curation Banner" class="banner">
+    <p class="Gift-Curation-Banner-message">
+        Gifts that speak from the heart. Surprise your loved ones with a carefully curated box filled with love and thoughtfulness.
+    </p>
+</section>
+
+    <section id="gifts">
+        <h2>Our Gift Collections</h2>
+        <div class="gift-box">
+            <img src="BELLLEZA 1.jpg" alt="Gift Box">
+            <p>Custom Romantic Box - A gift from the heart ❤️</p>
+        </div>
+        <div class="gift-box">
+            <img src="BELLEZA 4.jpg" alt="Gift Box">
+            <p>Luxury Gift Box - Perfect for any occasion</p>
+        </div>
+        <br>
+        <a href="collections.html" class="book-btn" target="_blank">View More</a>
+    </section>
+
+    <section id="booking">
+        <h2>Book a Consultation</h2>
+        <p>Want a personalized gift? Book a free consultation with us.</p>
+        <a href="https://calendar.google.com/" class="book-btn" target="_blank">Book Now</a>
+    </section>
+    <section class="reviews">
+        <h2>What Our Customers Say 💖</h2>
+        <div class="review">
+             <img src="BELLEZA REVIEW 1.jpg" alt="First Review" width="400" height="400">
+            <p>"Belleza.ng created the perfect gift for my anniversary. My partner loved it!"</p>
+            <h4>- Prinye</h4>
+        </div>
+        <div class="review">
+            <p>"Such a thoughtful curation! Every item was beautifully picked and packaged."</p>
+            <h4>- Rasak Y.</h4>
+        </div>
+        <div class="review">
+            <p>"Highly recommend! The attention to detail is unmatched."</p>
+            <h4>- Kamaldeen K.</h4>
+        </div>
+    </section>
+    
+    <section class="faq">
+        <h2>Frequently Asked Questions ❓</h2>
+        <div class="faq-item">
+            <button class="faq-question">How long does it take to receive my gift box? ⏳</button>
+            <div class="faq-answer">Delivery usually takes 2-5 business days, depending on your location.</div>
+        </div>
+        
+        <div class="faq-item">
+            <button class="faq-question">Can I customize the items inside the box? 🎁</button>
+            <div class="faq-answer">Yes! We offer custom options where you can select items for a personalized touch.</div>
+        </div>
+    
+        <div class="faq-item">
+            <button class="faq-question">Do you offer same-day delivery? 🚀</button>
+            <div class="faq-answer">Yes, we provide same-day delivery for selected locations.</div>
+        </div>
+    </section>
+    <section>
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <span class="close-btn">&times;</span>
+                <h2>RECEIVE YOUR FREE GIFTING PLANNER</h2>
+                <p>Join our newsletter to get our planner with a <strong>year’s worth of gifting holidays & gift recommendations.</strong></p>
+                <input type="email" placeholder="Enter your email address">
+                
+                <label><input type="radio" name="gifting" value="corporate"> Corporate Gifts</label>
+                <label><input type="radio" name="gifting" value="everyday"> Everyday Gifts</label>
+                <label><input type="radio" name="gifting" value="both"> Both</label>
+                <label><input type="radio" name="gifting" value="not_sure"> Not Sure Yet</label>
+                
+                <button onclick="subscribe()">SUBSCRIBE NOW</button>
+            </div>
+        </div>
+        
+</section>
+    
+
+    <footer>
+        <p>© 2025 Belleza.ng | Crafted with ❤️</p>
+        <div class="footer-social">
+                <a href="https://www.instagram.com/belleza_ng?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://wa.me/2349012345678" target="_blank" class="whatsapp" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="tel:+2349012345678" class="call-us" title="Call Us"> <i class="fas fa-phone-alt"></i></a>
+                <a href="https://www.twitter.com/yourprofile" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+    </footer>
+</body>
+</html>

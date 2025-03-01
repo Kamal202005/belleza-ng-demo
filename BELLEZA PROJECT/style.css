@@ -1,0 +1,553 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #fff;
+    color: #333;
+}
+/* ============================
+   HEADER (Applies to all pages)
+============================ */
+header {
+    background-color: white;
+    background-image: url(BELLEZA\ 3.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    justify-content: space-around;
+    align-content: center;
+    
+}
+header p{
+    font-style: italic;
+}
+nav {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+nav a {
+    color: white; 
+    text-decoration: none; 
+}
+
+nav a:hover {
+    color: lightgray; 
+}
+nav ul{
+color: white;
+justify-content: end;
+align-items: center;
+font-size: large;
+display: flex;
+justify-content: space-around;
+align-content: center;
+list-style-type: none;
+}
+/* Hide the menu on small screens */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.808);
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+section {
+    padding: 40px;
+}
+
+.gift-box {
+    display: inline-block;
+    margin: 20px;
+}
+
+.gift-box img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.book-btn {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.book-btn:hover {
+    background-color: darkred;
+}
+
+
+.Gift-Curation-Banner{
+    text-align: center; 
+    margin: 20px auto;
+}
+.Gift-Curation-Banner-message{
+    font-size: 18px;
+    font-style: italic;
+    color: #a00; /* Deep red for a warm feel */
+    margin-top: 10px;
+}
+.reviews {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f9f9f9; /* Light background to make it stand out */
+    border-radius: 10px;
+    width: 80%;
+    max-width: 700px;
+}
+.reviews h2 {
+    color: #a00; /* Deep red to match your theme */
+    margin-bottom: 15px;
+}
+.review {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review p {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.review h4 {
+    color: #555;
+    margin-top: 5px;
+}
+.faq {
+    max-width: 700px;
+    margin: auto;
+    padding: 40px;
+    text-align: left;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-question {
+    width: 100%;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.faq-answer {
+    display: flex;
+    padding: 10px;
+    background: #f9f9f9;
+    border-left: 3px solid #ff4d4d;
+    margin-top: 5px;
+}
+/* ============================
+   FOOTER (Applies to all pages)
+============================ */
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+   
+}
+.social-icons, .footer-social {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social-icons a, .footer-social a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: white; /* Change to match your theme */
+    transition: 0.3s;
+}
+
+.social-icons a:hover, .footer-social a:hover {
+    color: red; /* Change to highlight on hover */
+}
+
+/* ============================
+   ABOUT PAGE STYLES
+============================ */
+
+.content {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+    line-height: 1.8;
+}
+
+.content h2 {
+    color: #b22222; /* Elegant Red */
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 18px;
+}
+
+.values {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.values div {
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 5px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease-in-out;
+}
+
+.values div:hover {
+    transform: scale(1.05);
+}
+
+/* Hero Section */
+.hero {
+    padding: 100px 20px 40px;
+    background: #f8e1e6;
+}
+
+.hero h2 {
+    color: #d92332;
+}
+
+/* Gift Categories */
+.gift-category {
+    padding: 40px;
+}
+
+.category {
+    background: white;
+    padding: 15px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.category h3 {
+    color: #d92332;
+}
+
+/* Why Choose */
+.why-choose {
+    background: #f8e1e6;
+    padding: 40px;
+}
+
+.why-choose ul {
+    list-style: none;
+    padding: 0;
+}
+
+.why-choose li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Contact Section */
+.contact {
+    padding: 40px;
+}
+
+.btn {
+    background: #d92332;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+/* Contact Page Styles */
+.contact-hero {
+    padding: 100px 20px 40px;
+    background: #f8e1e6;
+    text-align: center;
+}
+
+.contact-info {
+    padding: 40px;
+    text-align: center;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #d92332;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media */
+.social-media {
+    background: #fff5f5;
+    padding: 40px;
+    text-align: center;
+}
+
+.social-media a {
+    color: #d92332;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form */
+.contact-form {
+    padding: 40px;
+    text-align: center;
+}
+
+.contact-form form {
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: #d92332;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background: #b71c26;
+}
+
+/* Booking Section */
+.booking {
+    padding: 40px;
+    text-align: center;
+}
+
+.booking .btn {
+    background: #d92332;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.booking .btn:hover {
+    background: #b71c26;
+}
+
+@media (max-width: 768px) {
+    /* Make text smaller for mobile */
+    body {
+        font-size: 16px;
+    }
+    /* Stack navigation links vertically */
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    /* Make images responsive */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Center-align headings */
+    h1, h2 {
+        text-align: center;
+    }
+
+    /* Adjust padding/margins */
+    .container {
+        padding: 10px;
+    }
+
+    /* Ensure buttons are large enough */
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 18px;
+    }
+}
+
+/* Popup container (hidden by default) */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Popup content box */
+.popup-content {
+    background: #ffffff;
+    padding: 25px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Close Button (X) */
+.close-btn {
+    position: absolute;
+    top: 15px; /* Adjust this to move it up or down */
+    right: 15px; /* Adjust this to move it left or right */
+    font-size: 24px; /* Make it larger */
+    font-weight: bold;
+    color: #333; /* Dark color like the one in your image */
+    cursor: pointer;
+    background-color: white; /* White background */
+    padding: 5px 12px; /* Padding for better spacing */
+    border-radius: 50%; /* Makes it round */
+    border: 1px solid #ccc; /* Light gray border */
+    transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #c3923e; /* Match button color */
+}
+
+/* Heading */
+.popup-content h2 {
+    color: #222;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Description */
+.popup-content p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Input field */
+.popup-content input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Radio button labels */
+.popup-content label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+/* Subscribe Button (Matching 'Book Now' Button) */
+.popup-content button {
+    background: #c3593e;  /* Gold color similar to Book Now button */
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    padding: 12px 20px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.popup-content button:hover {
+    background: #a6762b; /* Darker shade of gold on hover */
+}
